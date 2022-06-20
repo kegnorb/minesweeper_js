@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper v1.0</title>
+    <link rel="shortcut icon" href="imgs/msweep.jpg">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     
+  </head>
+
+  <body onload=initStuffs()>
+    <header>
+      <nav>
+        <a href="">Games</a>
+        <a href="">Registration</a>
+        <a href="">Log In</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-board">
+        <div class="board-header">
+          <img height="25" width="25" src="imgs/bomb2.png"/>
+          <span>Minesweeper</span>
+        </div>
+        <div class="game-menu-wrapper">
+          <div class="game-menu">
+            Game
+          </div>
+          <div class="game-menu">
+            Help
+          </div>
+
+        </div>
+        <div class="game-wrapper">
+          <div class="game-infos">
+            <div id="mine-cntr"></div>
+            <div id="face-container" onmousedown="insetBtn()" onmouseup="resetGame()">
+              <img width="25" height="25" src="imgs/smile1.png"/>
+            </div>
+            <div id="time-cntr"></div> 
+          </div>
+          <div class="minefield" onclick=startGame()>   
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      © <span class="current-year"></span> by NördDev corp.
+    </footer>
+    <script src="minesweeper.js"></script> 
+  </body>
+</html>

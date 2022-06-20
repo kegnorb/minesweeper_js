@@ -1,0 +1,203 @@
+@font-face {
+  font-family: digitFonts;
+  src: url(fonts/digital_dismay/Digital\ Dismay.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(82, 71, 71);
+    font-family: sans-serif;
+    color: rgb(83, 84, 87);  
+}
+  
+* {
+  box-sizing: border-box;
+}
+
+* {
+  outline: 0;
+}
+
+*::-moz-focus-inner {
+  border: 0;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  border-bottom: 2px solid red;
+}
+
+nav a {
+  color: rgb(197, 204, 219);
+  text-decoration: none;  
+  transition: .8s;
+  margin-left: 30px;
+}
+
+nav a:hover {
+  color:rgb(199, 164, 201);
+
+}
+
+
+main {
+  /*height: calc(100vh - 125px);*/
+  padding: 20px 10px;
+}
+
+.main-board {
+  border: 3px outset rgb(255, 255, 255);
+  outline: 1px solid rgb(165, 165, 165);
+  padding-top: 0px;
+  display: flex;
+  height: 340px;
+  width: 230px;
+  display: block;
+  margin: auto;
+  margin-top: 10vh;
+  background-color: rgb(213, 223, 222);
+}
+
+.board-header {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,8,105,1) 0%, rgba(190,215,221,1) 100%); 
+  padding-left: 2px;
+  color:rgb(235, 247, 245);
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.game-menu-wrapper {
+  width: 96%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px auto 0px auto;
+  height: 30px;
+  /*border: 2px solid rgb(119, 119, 119);*/
+  padding-left: 5px;
+}
+
+.game-menu {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: .9em;
+
+}
+
+.game-wrapper {
+  width: 96%;
+  display: block;
+  margin: 0px auto;
+  height: 82%;
+  border: 4px outset rgb(255, 255, 255);
+}
+
+.game-infos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px auto;
+  height: 50px;
+  border: 4px inset rgb(223, 223, 223);
+
+}
+
+#mine-cntr, #time-cntr {
+  width: 60px;
+  height: 36px;
+  font-family: digitFonts;
+  font-size: 2.4em;
+  color: red;
+  /*letter-spacing: 1px;*/
+  font-weight: 500;
+  /*font-variant-numeric: tabular-nums;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  /*text-align: center;
+  vertical-align: middle;*/
+  background-color: black;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-left: 1px;
+  border: 2px inset rgb(255, 255, 255);
+}
+
+#face-container {
+  width: 35px;
+  height: 36px;
+  border: 2px outset rgb(255, 255, 255);
+  outline: 1px outset rgb(190, 189, 189);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1px;
+}
+
+
+.minefield {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  /*grid-auto-columns: 12.5%;
+  grid-auto-rows: 12.5%;*/
+  margin: 0px auto;
+  height: 81%;
+  /*border-bottom: 1px solid rgb(119, 119, 119);
+  border-left: 1px solid rgb(119, 119, 119);*/
+  border: 4px inset rgb(223, 223, 223);
+}
+
+.field-item {
+  padding-top: 0px;
+  border: 1px solid rgb(153, 152, 152);
+  /*border-top: 1px solid rgb(119, 119, 119);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  font-weight: 700;
+  cursor: default;
+}
+
+.field-item-hidden {
+  border: 2px outset rgb(255, 255, 255);
+  outline: 1px outset rgb(0, 0, 0);
+  color: transparent !important;
+}
+
+.field-item img {
+  display: none;
+}
+
+/*.field-item-shown {
+  color: 
+}*/
+
+
+
+footer {
+  width: 100%;
+  background: black;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: .8em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
